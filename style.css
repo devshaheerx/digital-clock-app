@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("img.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.box {
+  background: rgba(0, 0, 0, 0.52);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  padding: 28px 24px 22px;
+  gap: 12px;
+}
+
+.times {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 16px;
+  font-size: 48px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+.times h3 {
+  font-size: 35px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.75);
+  align-self: flex-end;
+  margin-bottom: 4px;
+}
+
+.date {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 1px;
+}
+
+/* Large desktops — 1280px and above (default styles above already cover this) */
+
+/* Small desktops / laptops — up to 1024px */
+@media (max-width: 1024px) {
+  .box {
+    width: 65%;
+    padding: 24px 20px 18px;
+  }
+
+  .times {
+    font-size: 42px;
+    gap: 14px;
+  }
+
+  .times h3 {
+    font-size: 26px;
+  }
+
+  .date {
+    font-size: 16px;
+  }
+}
+
+/* Tablets — up to 768px */
+@media (max-width: 768px) {
+  .box {
+    width: 80%;
+    padding: 20px 18px 16px;
+    border-radius: 12px;
+  }
+
+  .times {
+    font-size: 34px;
+    gap: 10px;
+    letter-spacing: 1px;
+  }
+
+  .times h3 {
+    font-size: 20px;
+  }
+
+  .date {
+    font-size: 14px;
+  }
+}
+
+/* Large phones — up to 480px */
+@media (max-width: 480px) {
+  .box {
+    width: 90%;
+    padding: 16px 14px 14px;
+    border-radius: 10px;
+    gap: 8px;
+  }
+
+  .times {
+    font-size: 26px;
+    gap: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  .times h3 {
+    font-size: 16px;
+    margin-bottom: 2px;
+  }
+
+  .date {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+  }
+}
+
+/* Small phones — up to 360px */
+@media (max-width: 360px) {
+  .box {
+    width: 95%;
+    padding: 14px 12px 12px;
+    gap: 6px;
+  }
+
+  .times {
+    font-size: 22px;
+    gap: 6px;
+  }
+
+  .times h3 {
+    font-size: 14px;
+  }
+
+  .date {
+    font-size: 12px;
+  }
+}
