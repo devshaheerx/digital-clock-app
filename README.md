@@ -33,7 +33,7 @@ digital-clock/
 No build tools or dependencies needed. Just clone and open.
 
 ```bash
-git clone https://github.com/your-username/digital-clock.git
+git clone https://github.com/devshaheerx/digital-clock.git
 cd digital-clock
 ```
 
